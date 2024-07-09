@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSIT SCHOLARS</title>
+	<link href="index.css" rel="stylesheet">
+   <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<div id="loading" class="loader"> </div>
+	<br>
+	<br>
+<div class="main">
+
+<br>
+
+ <div class="logohere"> 
+
+<img src="logotrinity.png" width="120px" >
+</div>
+
+<br>
+<br>
+<h1><b> 𝔹𝕊𝕔.ℂ𝕊𝕀𝕋 2080 𝔹𝕒𝕥𝕔𝕙 </b></h1>
+<br>
+<center><table> 
+	<th colspan="2"> 𝐿𝑜𝑔𝒾𝓃 𝒾𝒻 𝓎𝑜𝓊 𝒷𝑒𝓁𝑜𝓃𝑔 𝒽𝑒𝓇𝑒! ;) </th>
+<br>
+
+	 <tr>
+    <td width="30%">Name</td>
+    <td><input type="text" id="username" name="username" ></td>
+  </tr>
+  <tr>
+    <td width="30%">Password</td>
+    <td><input type="password" id="password" name="password"></td>
+  </tr>
+
+</table></center>
+<br>
+
+<center><button onclick="validateForm()"> ➲ </button></center>
+
+<br>
+<br>
+</div>
+
+<!-- ------------------------------loader----------------------- -->
+ 
+ 
+
+<!-- --------------------------------------------------------- -->
+
+<script>
+function validateForm() {
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+
+  // Check if username and password are not empty
+  if (username === '' || password === '') {
+    alert("Please enter both username and password.");
+    return;
+  }
+
+  
+
+  //IF Correct direct it to next page.
+  if (username === 'csit123ABC' || password === 'abishkar') {
+    
+    document.getElementById("loading").style.display = "block";
+        // Redirect to the second.html page after a delay of 5 seconds
+    setTimeout(function() {
+      window.location.href = 'second.html';
+    }, 5000); // 5000 milliseconds = 5 seconds
+
+    return;
+  }
+ // If all checks pass, redirect to another web page
+  // window.location.href = "Index.html";
+
+
+  // Check if username contains only letters and numbers
+  var usernameRegex = /^[a-zA-Z0-9]+$/;
+  if (!usernameRegex.test(username)) {
+    alert("Username must contain only letters and numbers.");
+    return;
+  }
+
+  // Check if password length is at least 6 characters
+  if (password.length < 6) {
+    alert("Password must be at least 6 characters long.");
+    return;
+  }
+
+document.getElementById("loading").style.display = "none";
+
+}
+
+</script>
+<!-- ----------Delay page load--------- -->
+
+  
+    
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+body
+		{
+		
+			background-image: url('bbleach.jpg');
+			margin-top: 0px;
+			background-position: center;
+			background-size: 1280px 760px;
+			background-position-y: 0px;
+			background-repeat: no-repeat;
+			
+		}
+
+		.logohere
+		{
+			height:80px ;
+			width: 100px;
+			color: whitesmoke;
+		    margin-left: 118px;
+
+
+		}
+
+
+html
+{
+		display: flex;
+		justify-content: center;
+}
+
+		.main
+		{
+			border:solid whitesmoke;
+			border-radius: 20px;
+			color: whitesmoke;
+			margin-right: 450px;
+			margin-left: 450px;
+			margin-bottom: 0px;
+			justify-content: center;
+			align-items: center;
+			backdrop-filter: blur(10px);
+			
+			opacity: 75%;	
+		}
+
+		h1
+		{
+			text-align: center;
+		}
+
+		table
+		{
+			border: none;
+			width: 80%;
+			border-radius: 20px;
+
+		}
+
+
+		th,td,tr
+		{
+			border: none;
+			
+			padding : 7px;
+		}
+
+
+
+
+
+  #loading {
+    display: none;
+    margin-top: 0px;
+    margin-right: 10px;
+    position: absolute;
+
+    
+}
+    /* HTML: <div class="loader"></div> */
+.loader {
+  width: 65px;
+  height: 30px;
+  position: relative;
+
+}
+.loader:before {
+  content: " ";
+  position: absolute;
+  border-radius: 50px;
+  background-color: black;
+  box-shadow: 0 0 0 3px inset #fff;
+  animation: l3 0.75s infinite alternate;
+}
+@keyframes l3 {
+  0% {
+    inset: 0 35px 0 0;
+  }
+  50% {
+    inset: 0 0 0 0;
+  }
+  100% {
+    inset: 0 0 0 35px;
+  }
+}
+
+
+
+		button {
+   				padding: 0px;
+    			font-size: 40px;
+   				border-radius: 10%;
+    			opacity: 90%;
+   				background-color: #000000;
+   				border: black;
+   				opacity: 100%;
+   				color: white; 
+				}
+
+		
+		/* Mobiw styles */
+		@media screen and (max-width: 750px){
+		
+
+			.main {
+   		 			margin-top:10px;
+        			margin-right: 20px;
+        			margin-left: 20px;
+        		}
+
+       
+
+
+
+        body
+						{
+							background-image: url('mobile1.jpg');
+							background-size: 550px 936px;
+							background-repeat: no-repeat;
+							color: white;
+							font-family: cursive;
+						}
+
+
+        			.logohere
+								{
+									height:110px ;
+									width: 118px;
+									color: whitesmoke;
+								    margin-left: auto;
+								    margin-right: auto;
+								}
+
+		
+
+					#loading {
+					    display: none;
+					    margin-top:0px;
+					    margin-left: 136px;
+					    }
+					
+
+
+
+
+   				 }
+		
+	

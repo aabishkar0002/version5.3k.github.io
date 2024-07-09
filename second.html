@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" userscalable="0">
+  <title>Abishkar's Web.org</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="second.css" rel="stylesheet">
+
+  
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<ul>
+
+<br>
+  <li><a href="Index.html"><img src="logotrinity.png" height="50px"  width="56px" class="lol" id="logo"></a></li>
+
+<br>
+
+
+  <li id="inv"><form id="form" role="search">
+  <input type="search" id="query" name="q"
+   placeholder="    Search stuffs here..."
+   aria-label="Search through site content" style="width: 300px; height: 40px;  border-radius: 20px;">
+ <i id ="inv" class="fas fa-search search-icon" onclick="here()"></i>
+  <script>
+    function here()
+    {
+      alert("Success Clicked!");
+    }
+  </script>
+
+</form></li>
+
+
+  <li class="this" id="inv"><a href="Index.html">Home</a></li>
+  <li class="this" id="inv"><a href="a.html">Blogs</a></li>
+  <li class="r" id="inv"><a href="animelist.html">FAQs</a></li>
+ 
+
+</ul>
+
+<img src="gojo.jpg" align="left" height="480px" width="138px" class="p11" id="w1">
+
+
+
+
+<img src="minato.jpg"   width="150px" class="p22" id="w2">
+<br>
+<br>
+<br>
+<br>
+<p class="damn"><marquee>Website created in March 8, 2024.    ---------------------   Version 1.  ----------------- updated at 3/10/24</marquee></p>
+
+<!-- --------------------------------------------COUNTER-------------------------------------------- -->
+
+<div class="these">
+<h1 class="banner"></h1>
+
+<div class="examcounter">
+<br>
+<br>
+<br>
+<br>
+  <h1 class="countdown">Mid Term-Exam Countdown</h1>
+  <p id="countdown"></p>
+
+</div>
+</div>
+  <script>
+    // Set the date and time of the exam
+    const examDate = new Date('2024-07-22T01:00:00').getTime();
+
+    // Update the countdown every second
+    const countdown = setInterval(function() {
+      // Get the current date and time
+      const now = new Date().getTime();
+
+      // Calculate the difference between now and the exam date
+      const difference = examDate - now;
+
+      // Calculate days, hours, minutes, and seconds
+      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+      // Display the countdown
+      document.getElementById('countdown').innerHTML = `Time left: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+      // If the countdown is over, display a message and stop the countdown
+      if (difference < 0) {
+        clearInterval(countdown);
+        document.getElementById('countdown').innerHTML = 'The exam has started!';
+      }
+    }, 1000);
+  </script>
+
+
+<!-- ----------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="ab">
+  
+<br>
+
+<h2 align="center"> EVENTS </h2> 
+<br>
+<div class="regular" id="regular1">
+    <b>Version 1.6 Updates</b>
+    
+    <p>  "Sek Dinxu"- Abishek Shahi</p>
+    <p>  improved stability for mobile versions </p>
+    <p>  Next main update: August 10</p>
+</div>
+
+
+  <br>
+<br>
+<table class="seperate">
+  <tr>
+    <td style="text-align: center;"><b>HOT🌶️</b>
+      
+    <p> Play Quiz Now!</p>
+    <p>  </p>
+    <p>  <button class="fa fa-play" id="jeez" onclick="country()"> Play Now!</button>
+            <script>
+                function country(){
+                    window.location.href="https://aabishkar0002.github.io/Quiz.v1.github.io/";
+                }
+            </script>
+</p>
+  </td>
+
+  
+    <td><img src="hot.png" height="200px" width="140px" id="hot"></td>
+  </tr>    
+  </table>  
+
+  <table class="seperate1">
+  <tr>
+   <center> <td style="text-align: center;"><b>HOT🌶️</b></center>
+      
+    <p> Music is here!</p>
+    <p>  </p>
+    <p>  <button class="fa fa-play"  onclick="countrys()"> Listen Now!</button>
+            <script>
+                function countrys(){
+                    window.location.href="https://aabishkar0002.github.io/music.gihub.io/";
+                }
+            </script>
+</p>
+  </td>
+
+  
+    <td><img id="mm" src="m.png" height="200px" width="180px" style="margin-left:20px;"></td>
+  </tr>    
+  </table> 
+
+   <!-- Table 3 Microprocessor  -->
+   <table class="seperate2">
+  <tr>
+    <td style="text-align: center;"><b>;)</b>
+      
+    <p> Practice Microprocessor!</p>
+    <p>  </p>
+    <p>  <button class="fa fa-play" id="jeez" onclick="micro()"> Load!</button>
+            <script>
+                function micro(){
+                    window.location.href="https://8085sim.js.org/";
+                }
+            </script>
+</p>
+  </td>
+
+  
+    <td><img src="85.png" id="eit" height="200px" width="140px" class="new0"></td>
+  </tr>    
+  </table>  
+<br>
+<!--  -->
+<br>
+
+<br>
+<br>
+
+
+<div class="regular" id="regular2">
+  <br>
+<br>
+<div class="routine1">
+     <center> <b>Group A Routine!</b> </center>
+      <br>
+
+    <img src="updated.png" height="600px" width="950px"  id="imgsimple1">
+</div>      
+
+<br>
+</div>
+
+<br>
+<div class="regular" id="regular3">
+
+ <center><h3> Calender 2nd Sem  </h3></center> 
+
+
+<br>
+
+<img id="imgsimple2" src="calender2nd.png" height="500px" width="870px" >
+
+<br>
+
+
+</div>
+
+
+<div class="bottom">
+<img src="dogs.jpg" id="imgsimple3" height="170px" width="250px">
+
+<div class="bitch">
+<p><b> <p class="aaa">" Thankyou ! </p><br><p class="bbb">for the Visit!!! "</p><br> <p class="ccc"> -  By Abishkar Kunwar</p> </b></p>
+</div>
+</div>
+</body>
+
+</html>
+
+
